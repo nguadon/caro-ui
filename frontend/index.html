@@ -19,7 +19,7 @@ body { background:#1e1e2f;color:white;text-align:center;font-family:Arial;}
 <div class="grid" id="board"></div>
 
 <script>
-const socket = io("caro-ui-production.up.railway.app"); // 🔥 thay link backend
+const socket = io("http://caro-ui-production.up.railway.app:8080"); // 🔥 thay link backend
 
 const params = new URLSearchParams(window.location.search);
 const roomId = params.get("room") || "default";
